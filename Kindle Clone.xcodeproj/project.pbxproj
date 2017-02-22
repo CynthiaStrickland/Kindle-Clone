@@ -14,6 +14,13 @@
 		819135D11E5E4F3500FA2EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819135CF1E5E4F3500FA2EE1 /* LaunchScreen.storyboard */; };
 		819135DC1E5E4F3500FA2EE1 /* Kindle_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819135DB1E5E4F3500FA2EE1 /* Kindle_CloneTests.swift */; };
 		819135E71E5E4F3500FA2EE1 /* Kindle_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819135E61E5E4F3500FA2EE1 /* Kindle_CloneUITests.swift */; };
+		819135F81E5E504300FA2EE1 /* amazon_icon.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135F71E5E504300FA2EE1 /* amazon_icon.imageset */; };
+		819135FA1E5E504E00FA2EE1 /* bill_gates.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135F91E5E504E00FA2EE1 /* bill_gates.imageset */; };
+		819135FC1E5E506200FA2EE1 /* menu.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135FB1E5E506200FA2EE1 /* menu.imageset */; };
+		819135FE1E5E506900FA2EE1 /* sort.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135FD1E5E506900FA2EE1 /* sort.imageset */; };
+		819136001E5E507100FA2EE1 /* grid.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135FF1E5E507100FA2EE1 /* grid.imageset */; };
+		819136021E5E507D00FA2EE1 /* steve_jobs.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819136011E5E507D00FA2EE1 /* steve_jobs.imageset */; };
+		819136041E5E50AC00FA2EE1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 819136031E5E50AC00FA2EE1 /* Contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +42,8 @@
 
 /* Begin PBXFileReference section */
 		819135C31E5E4F3500FA2EE1 /* Kindle Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindle Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		819135C81E5E4F3500FA2EE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Kindle Clone/AppDelegate.swift"; sourceTree = "<group>"; };
+		819135C81E5E4F3500FA2EE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Kindle Clone/ViewController.swift"; sourceTree = "<group>"; };
 		819135CB1E5E4F3500FA2EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		819135CD1E5E4F3500FA2EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819135D01E5E4F3500FA2EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		819135E21E5E4F3500FA2EE1 /* Kindle CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kindle CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		819135E61E5E4F3500FA2EE1 /* Kindle_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kindle_CloneUITests.swift; sourceTree = "<group>"; };
 		819135E81E5E4F3500FA2EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		819135F71E5E504300FA2EE1 /* amazon_icon.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amazon_icon.imageset; sourceTree = "<group>"; };
+		819135F91E5E504E00FA2EE1 /* bill_gates.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bill_gates.imageset; sourceTree = "<group>"; };
+		819135FB1E5E506200FA2EE1 /* menu.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = menu.imageset; sourceTree = "<group>"; };
+		819135FD1E5E506900FA2EE1 /* sort.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sort.imageset; sourceTree = "<group>"; };
+		819135FF1E5E507100FA2EE1 /* grid.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = grid.imageset; sourceTree = "<group>"; };
+		819136011E5E507D00FA2EE1 /* steve_jobs.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = steve_jobs.imageset; sourceTree = "<group>"; };
+		819136031E5E50AC00FA2EE1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +91,21 @@
 		819135BA1E5E4F3500FA2EE1 = {
 			isa = PBXGroup;
 			children = (
+				819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */,
+				819135F61E5E4F4E00FA2EE1 /* VIEWS */,
+				819135F51E5E4F4700FA2EE1 /* CONTROLLERS */,
+				819135F41E5E4F4000FA2EE1 /* MODALS */,
 				819135C51E5E4F3500FA2EE1 /* Kindle Clone */,
 				819135DA1E5E4F3500FA2EE1 /* Kindle CloneTests */,
 				819135E51E5E4F3500FA2EE1 /* Kindle CloneUITests */,
 				819135C41E5E4F3500FA2EE1 /* Products */,
+				819136031E5E50AC00FA2EE1 /* Contents.json */,
+				819135FF1E5E507100FA2EE1 /* grid.imageset */,
+				819135FB1E5E506200FA2EE1 /* menu.imageset */,
+				819135FD1E5E506900FA2EE1 /* sort.imageset */,
+				819135F91E5E504E00FA2EE1 /* bill_gates.imageset */,
+				819136011E5E507D00FA2EE1 /* steve_jobs.imageset */,
+				819135F71E5E504300FA2EE1 /* amazon_icon.imageset */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +122,6 @@
 		819135C51E5E4F3500FA2EE1 /* Kindle Clone */ = {
 			isa = PBXGroup;
 			children = (
-				819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */,
-				819135C81E5E4F3500FA2EE1 /* ViewController.swift */,
-				819135CA1E5E4F3500FA2EE1 /* Main.storyboard */,
 				819135CD1E5E4F3500FA2EE1 /* Assets.xcassets */,
 				819135CF1E5E4F3500FA2EE1 /* LaunchScreen.storyboard */,
 				819135D21E5E4F3500FA2EE1 /* Info.plist */,
@@ -123,6 +145,29 @@
 				819135E81E5E4F3500FA2EE1 /* Info.plist */,
 			);
 			path = "Kindle CloneUITests";
+			sourceTree = "<group>";
+		};
+		819135F41E5E4F4000FA2EE1 /* MODALS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MODALS;
+			sourceTree = "<group>";
+		};
+		819135F51E5E4F4700FA2EE1 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				819135C81E5E4F3500FA2EE1 /* ViewController.swift */,
+			);
+			name = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		819135F61E5E4F4E00FA2EE1 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				819135CA1E5E4F3500FA2EE1 /* Main.storyboard */,
+			);
+			name = VIEWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +280,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819136001E5E507100FA2EE1 /* grid.imageset in Resources */,
 				819135D11E5E4F3500FA2EE1 /* LaunchScreen.storyboard in Resources */,
 				819135CE1E5E4F3500FA2EE1 /* Assets.xcassets in Resources */,
+				819136021E5E507D00FA2EE1 /* steve_jobs.imageset in Resources */,
+				819135FE1E5E506900FA2EE1 /* sort.imageset in Resources */,
+				819136041E5E50AC00FA2EE1 /* Contents.json in Resources */,
+				819135FA1E5E504E00FA2EE1 /* bill_gates.imageset in Resources */,
 				819135CC1E5E4F3500FA2EE1 /* Main.storyboard in Resources */,
+				819135F81E5E504300FA2EE1 /* amazon_icon.imageset in Resources */,
+				819135FC1E5E506200FA2EE1 /* menu.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +357,7 @@
 				819135CB1E5E4F3500FA2EE1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "Kindle Clone";
 			sourceTree = "<group>";
 		};
 		819135CF1E5E4F3500FA2EE1 /* LaunchScreen.storyboard */ = {
