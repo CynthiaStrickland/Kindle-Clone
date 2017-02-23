@@ -21,6 +21,7 @@
 		819136021E5E507D00FA2EE1 /* steve_jobs.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819136011E5E507D00FA2EE1 /* steve_jobs.imageset */; };
 		819136041E5E50AC00FA2EE1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 819136031E5E50AC00FA2EE1 /* Contents.json */; };
 		81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7E90F1E5F833500AF5432 /* BookPages.swift */; };
+		81C7E9121E5F8A7300AF5432 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 81C7E9111E5F8A7300AF5432 /* ios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		819136011E5E507D00FA2EE1 /* steve_jobs.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = steve_jobs.imageset; sourceTree = "<group>"; };
 		819136031E5E50AC00FA2EE1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		81C7E90F1E5F833500AF5432 /* BookPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPages.swift; sourceTree = "<group>"; };
+		81C7E9111E5F8A7300AF5432 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = ../ios; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		819135C51E5E4F3500FA2EE1 /* Kindle Clone */ = {
 			isa = PBXGroup;
 			children = (
+				81C7E9111E5F8A7300AF5432 /* ios */,
 				819135CD1E5E4F3500FA2EE1 /* Assets.xcassets */,
 				819135CF1E5E4F3500FA2EE1 /* LaunchScreen.storyboard */,
 				819135D21E5E4F3500FA2EE1 /* Info.plist */,
@@ -284,6 +287,7 @@
 				819135D11E5E4F3500FA2EE1 /* LaunchScreen.storyboard in Resources */,
 				819135CE1E5E4F3500FA2EE1 /* Assets.xcassets in Resources */,
 				819136021E5E507D00FA2EE1 /* steve_jobs.imageset in Resources */,
+				81C7E9121E5F8A7300AF5432 /* ios in Resources */,
 				819135FE1E5E506900FA2EE1 /* sort.imageset in Resources */,
 				819136041E5E50AC00FA2EE1 /* Contents.json in Resources */,
 				819135FA1E5E504E00FA2EE1 /* bill_gates.imageset in Resources */,
@@ -403,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -448,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
