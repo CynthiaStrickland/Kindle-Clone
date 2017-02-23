@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  ViewController.swift
 //  Kindle Clone
 //
 //  Created by Cynthia Whitlatch on 2/22/17.
@@ -7,8 +7,6 @@
 //
 
 import UIKit
-
-
 
 class ViewController: UITableViewController {
     
@@ -18,7 +16,6 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .blue
-        
         navigationItem.title = "KINDLE"
         setupBooks()
         
@@ -47,25 +44,6 @@ class ViewController: UITableViewController {
             ])
         
         self.books = [book, book2]
-        
-        guard let books = self.books else {return}
-        for book in books {
-            print(book.title)
-            for page in book.pages {
-                print(page.text)
-            }
-        }
-        
-        //   ********** ALTERNATIVE WAY TO UNWRAP ************
-        //        if let unwrappedBooks = self.books {
-        //
-        //            for book in unwrappedBooks {
-        //                print(book.title)
-        //                for page in book.pages {
-        //                    print(page.text)
-        //                }
-        //            }
-        //      }
     }
 }
 
