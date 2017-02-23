@@ -20,6 +20,7 @@
 		819136001E5E507100FA2EE1 /* grid.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819135FF1E5E507100FA2EE1 /* grid.imageset */; };
 		819136021E5E507D00FA2EE1 /* steve_jobs.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 819136011E5E507D00FA2EE1 /* steve_jobs.imageset */; };
 		819136041E5E50AC00FA2EE1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 819136031E5E50AC00FA2EE1 /* Contents.json */; };
+		81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7E90F1E5F833500AF5432 /* BookPages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		819135FF1E5E507100FA2EE1 /* grid.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = grid.imageset; sourceTree = "<group>"; };
 		819136011E5E507D00FA2EE1 /* steve_jobs.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = steve_jobs.imageset; sourceTree = "<group>"; };
 		819136031E5E50AC00FA2EE1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		81C7E90F1E5F833500AF5432 /* BookPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		819135F41E5E4F4000FA2EE1 /* MODALS */ = {
 			isa = PBXGroup;
 			children = (
+				81C7E90F1E5F833500AF5432 /* BookPages.swift */,
 			);
 			name = MODALS;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				819135C91E5E4F3500FA2EE1 /* ViewController.swift in Sources */,
+				81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */,
 				819135C71E5E4F3500FA2EE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +560,7 @@
 				819135ED1E5E4F3500FA2EE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		819135EE1E5E4F3500FA2EE1 /* Build configuration list for PBXNativeTarget "Kindle CloneTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +569,7 @@
 				819135F01E5E4F3500FA2EE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		819135F11E5E4F3500FA2EE1 /* Build configuration list for PBXNativeTarget "Kindle CloneUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +578,7 @@
 				819135F31E5E4F3500FA2EE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
