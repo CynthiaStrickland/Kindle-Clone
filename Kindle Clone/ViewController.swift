@@ -15,22 +15,30 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue 
         navigationItem.title = "KINDLE"
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(BookCell.self, forCellReuseIdentifier: "cell")
         setupBooks()
-        tableView.backgroundColor = .green
         tableView.tableFooterView = UIView()
         
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let count = books?.count{
+            return count
+        }
+            return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        view.backgroundColor = .yellow
         
+//       let book = books?[indexPath.row]
+//        cell.textLabel?.text = book?.title
+//        cell.imageView?.image = book?.image
         return cell
         
     }
@@ -41,7 +49,7 @@ class ViewController: UITableViewController {
         
         let pages = [page1, page2]
         
-        let book = Book(title: "Steve Jobs", author: "Walter Isaacson", pages:pages)
+        let book = Book(title: "Steve Jobs", author: "Walter Isaacson", pages:pages, image: #imageLiteral(resourceName: "steve_jobs.jpg"))
         
         for page in book.pages {
             print(page.text)
@@ -55,7 +63,7 @@ class ViewController: UITableViewController {
             Page(number: 4, text: "Text for Page 4"),
             Page(number: 1, text: "Text for Page 5")
             
-            ])
+            ], image: #imageLiteral(resourceName: "bill_gates.jpg"))
         
         self.books = [book, book2]
     }

@@ -22,6 +22,7 @@
 		819136041E5E50AC00FA2EE1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 819136031E5E50AC00FA2EE1 /* Contents.json */; };
 		81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7E90F1E5F833500AF5432 /* BookPages.swift */; };
 		81C7E9121E5F8A7300AF5432 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 81C7E9111E5F8A7300AF5432 /* ios */; };
+		81C7E9141E5F8E2700AF5432 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7E9131E5F8E2700AF5432 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		819136031E5E50AC00FA2EE1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		81C7E90F1E5F833500AF5432 /* BookPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPages.swift; sourceTree = "<group>"; };
 		81C7E9111E5F8A7300AF5432 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = ../ios; sourceTree = "<group>"; };
+		81C7E9131E5F8E2700AF5432 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				81C7E90F1E5F833500AF5432 /* BookPages.swift */,
+				81C7E9131E5F8E2700AF5432 /* BookCell.swift */,
 			);
 			name = MODALS;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C7E9141E5F8E2700AF5432 /* BookCell.swift in Sources */,
 				819135C91E5E4F3500FA2EE1 /* ViewController.swift in Sources */,
 				81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */,
 				819135C71E5E4F3500FA2EE1 /* AppDelegate.swift in Sources */,
