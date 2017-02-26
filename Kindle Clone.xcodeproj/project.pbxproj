@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81227F4B1E629F8E00A2F2B1 /* BookPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */; };
+		81227F4D1E62A6D000A2F2B1 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81227F4C1E62A6D000A2F2B1 /* PageCell.swift */; };
 		819135C71E5E4F3500FA2EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */; };
 		819135C91E5E4F3500FA2EE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819135C81E5E4F3500FA2EE1 /* ViewController.swift */; };
 		819135CE1E5E4F3500FA2EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819135CD1E5E4F3500FA2EE1 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageController.swift; sourceTree = "<group>"; };
+		81227F4C1E62A6D000A2F2B1 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		819135C31E5E4F3500FA2EE1 /* Kindle Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindle Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Kindle Clone/AppDelegate.swift"; sourceTree = "<group>"; };
 		819135C81E5E4F3500FA2EE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Kindle Clone/ViewController.swift"; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			children = (
 				81C7E90F1E5F833500AF5432 /* BookPages.swift */,
 				81C7E9131E5F8E2700AF5432 /* BookCell.swift */,
+				81227F4C1E62A6D000A2F2B1 /* PageCell.swift */,
 			);
 			name = MODALS;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				819135C81E5E4F3500FA2EE1 /* ViewController.swift */,
+				81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */,
 			);
 			name = CONTROLLERS;
 			sourceTree = "<group>";
@@ -322,7 +328,9 @@
 			files = (
 				81C7E9141E5F8E2700AF5432 /* BookCell.swift in Sources */,
 				819135C91E5E4F3500FA2EE1 /* ViewController.swift in Sources */,
+				81227F4D1E62A6D000A2F2B1 /* PageCell.swift in Sources */,
 				81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */,
+				81227F4B1E629F8E00A2F2B1 /* BookPageController.swift in Sources */,
 				819135C71E5E4F3500FA2EE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
