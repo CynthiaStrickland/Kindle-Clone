@@ -10,20 +10,28 @@ import UIKit
 
 class BookCell : UITableViewCell {
     
-    let coverImageView: UIImageView = {
+    var book: Book? {
+        didSet {
+            coverImageView.image = book?.image
+            titleLabel.text = book?.title
+            authorLabel.text = book?.author
+        }
+    }
+    
+    private let coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = #imageLiteral(resourceName: "steve_jobs")
         return imageView
     }()
     
-    let titleLabel : UILabel = {
+    private let titleLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let authorLabel : UILabel = {
+    private let authorLabel : UILabel = {
         let label2 = UILabel()
         label2.translatesAutoresizingMaskIntoConstraints = false
         return label2

@@ -19,8 +19,16 @@ class ViewController: UITableViewController {
         tableView.register(BookCell.self, forCellReuseIdentifier: "cell")
         setupBooks()
         tableView.tableFooterView = UIView()
-        
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let layout = UICollectionViewFlowLayout()
+        let bookPageController = UICollectionViewController(collectionViewLayout: layout)
+        
+        present(bookPageController, animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -36,11 +44,7 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BookCell
         
         let book = books?[indexPath.row]
-        
-        cell.coverImageView.image = book?.image
-        cell.titleLabel.text = book?.title
-        cell.authorLabel.text = book?.author
-        
+        cell.book = book
         return cell
     }
     
