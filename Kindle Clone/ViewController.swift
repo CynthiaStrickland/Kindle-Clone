@@ -92,11 +92,15 @@ class ViewController: UITableViewController {
                 
                 self.books = []
                     for bookDictionary in bookDictionaries {
-                        if let title = bookDictionary["title"] as? String,
-                            let author = bookDictionary["author"] as? String {
-                            let book = Book(title: title, author: author, pages: [], image: #imageLiteral(resourceName: "steve_jobs.jpg"))
-                            self.books?.append(book)  //specify self due to retain cycles
-                        }
+                        let book = Book(dictionary: bookDictionary)
+                        self.books?.append(book)
+                        
+                        
+//                        if let title = bookDictionary["title"] as? String,
+//                            let author = bookDictionary["author"] as? String {
+//                            let book = Book(title: title, author: author, pages: [], image: #imageLiteral(resourceName: "steve_jobs.jpg"))
+//                            self.books?.append(book)  //specify self due to retain cycles
+//                        }
                     }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()   //Dangerous to execute this on main thread
