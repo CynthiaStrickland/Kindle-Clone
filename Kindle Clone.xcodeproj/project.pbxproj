@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81080F641E62B318001B0690 /* AmazonButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81080F631E62B318001B0690 /* AmazonButtonController.swift */; };
+		81080F671E62B33A001B0690 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81080F661E62B33A001B0690 /* WebKit.framework */; };
 		81227F4B1E629F8E00A2F2B1 /* BookPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */; };
 		81227F4D1E62A6D000A2F2B1 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81227F4C1E62A6D000A2F2B1 /* PageCell.swift */; };
 		819135C71E5E4F3500FA2EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819135C61E5E4F3500FA2EE1 /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81080F631E62B318001B0690 /* AmazonButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonButtonController.swift; sourceTree = "<group>"; };
+		81080F661E62B33A001B0690 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageController.swift; sourceTree = "<group>"; };
 		81227F4C1E62A6D000A2F2B1 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		819135C31E5E4F3500FA2EE1 /* Kindle Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindle Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81080F671E62B33A001B0690 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81080F651E62B33A001B0690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81080F661E62B33A001B0690 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		819135BA1E5E4F3500FA2EE1 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 				819135F91E5E504E00FA2EE1 /* bill_gates.imageset */,
 				819136011E5E507D00FA2EE1 /* steve_jobs.imageset */,
 				819135F71E5E504300FA2EE1 /* amazon_icon.imageset */,
+				81080F651E62B33A001B0690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +185,7 @@
 			children = (
 				819135C81E5E4F3500FA2EE1 /* ViewController.swift */,
 				81227F4A1E629F8E00A2F2B1 /* BookPageController.swift */,
+				81080F631E62B318001B0690 /* AmazonButtonController.swift */,
 			);
 			name = CONTROLLERS;
 			sourceTree = "<group>";
@@ -328,6 +343,7 @@
 			files = (
 				81C7E9141E5F8E2700AF5432 /* BookCell.swift in Sources */,
 				819135C91E5E4F3500FA2EE1 /* ViewController.swift in Sources */,
+				81080F641E62B318001B0690 /* AmazonButtonController.swift in Sources */,
 				81227F4D1E62A6D000A2F2B1 /* PageCell.swift in Sources */,
 				81C7E9101E5F833500AF5432 /* BookPages.swift in Sources */,
 				81227F4B1E629F8E00A2F2B1 /* BookPageController.swift in Sources */,

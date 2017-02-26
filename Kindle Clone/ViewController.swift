@@ -15,9 +15,14 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupBooks()
+        setupNavBarButtonItems()
+        
         navigationItem.title = "KINDLE"
         tableView.register(BookCell.self, forCellReuseIdentifier: "cell")
-        setupBooks()
+        
+        tableView.backgroundColor = UIColor(white: 1, alpha: 0.3)
+        tableView.separatorColor = UIColor(white: 1, alpha: 0.2)
         tableView.tableFooterView = UIView()
     }
     
@@ -52,6 +57,25 @@ class ViewController: UITableViewController {
         cell.book = book
         return cell
     }
+    
+    func setupNavBarButtonItems() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu.png").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(menuButtonPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "amazon_icon.png").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleAmazonIconPressed))
+    }
+    
+    func handleAmazonIconPressed() {
+        
+    }
+    
+    func menuButtonPressed() {
+        
+    }
+    
+    
+    func fetchBooks() {
+        
+    }
+    
     
     func setupBooks() {
         let page1 = Page(number: 1, text: "Text for first page")

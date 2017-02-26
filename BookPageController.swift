@@ -14,6 +14,7 @@ class BookPageController: UICollectionViewController, UICollectionViewDelegateFl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView?.backgroundColor = .white
         
         navigationItem.title = self.book?.title
         
