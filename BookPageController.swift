@@ -38,19 +38,22 @@ class BookPageController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return book?.pages.count ?? 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let pageCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PageCell
+        
+        let page = book?.pages[indexPath.row]
+        pageCell.textLabel.text = page?.text
         
 //        if indexPath.item % 2 == 0 {
 //            cell.backgroundColor = .blue
 //        } else {
 //            cell.backgroundColor = .red
 //        }
-            return cell
+            return pageCell
     }
     
 }

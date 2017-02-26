@@ -64,7 +64,10 @@ class ViewController: UITableViewController {
     }
     
     func handleAmazonIconPressed() {
-        
+        let amazonController = AmazonButtonController()
+       
+        let navController = UINavigationController(rootViewController: amazonController)
+        present(navController, animated: true, completion: nil)
     }
     
     func menuButtonPressed() {

@@ -13,7 +13,7 @@ class PageCell: UICollectionViewCell {
     let textLabel:UILabel = {
         let pageText = UILabel()
         pageText.backgroundColor = .white
-        pageText.text = "Page1dalkjf;alskdjf;alskjdf;lksdjf;lkdsjf;lkdjf;lkdjaf;lkdjs;lfkj;dlkfj;sdlkfj;sdlkjf;sdlkjf;lsdkjf;lsdkjf;ldskjf;lskdjf;lsdkjf;lsdkjf;sldkjf;slkjdf;lskdjf;lksdjf;lkdsjf;lskdjf;sldkjf;lkajsdf;lksjf;lkdj;flkjd;alkfj;aldkjf;alksdjf;laksjdf;lkdsaj;ldkj;lfkjas;ldkjf;lskdajf;lksdjf;lkdsjf;lksdjf;lksdj;lfkjsd;lkjf;lsdkjf;lskdjf;lksdjf;lskjdf;lkasjdf;lkdsjf;lskdjf;lkdjf;lksjd;flkjsd;flkjasd;lfkjds;lkfj;ladskjf;lskdjf;lksadj;flkja;dlkjf;ladksjf;lkadsjf;lksdjf;lksdjf;lskdjaf;lksdjf;lkjas;ldkjf;alkdjf;lksdjf;lkjdsf"
+        pageText.text = "Page1"
         pageText.translatesAutoresizingMaskIntoConstraints = false
         pageText.numberOfLines = 0
         
