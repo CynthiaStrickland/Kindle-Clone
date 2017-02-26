@@ -14,9 +14,10 @@ class AmazonButtonController : UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .green
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCloseAmazon))
+        self.navigationItem.leftBarButtonItem?.tintColor = .black
 
         let webV:UIWebView = UIWebView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         
@@ -24,6 +25,7 @@ class AmazonButtonController : UIViewController, UIWebViewDelegate {
         let request = URLRequest(url: url!);
         webV.loadRequest(request);
         webV.delegate = self
+        
     }
 
     func handleCloseAmazon() {

@@ -17,6 +17,7 @@ class ViewController: UITableViewController {
         
         setupBooks()
         setupNavBarButtonItems()
+        fetchBooks()
         
         navigationItem.title = "KINDLE"
         tableView.register(BookCell.self, forCellReuseIdentifier: "cell")
@@ -76,7 +77,33 @@ class ViewController: UITableViewController {
     
     
     func fetchBooks() {
-        
+        if let url = URL(string: "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/kindle.json") {
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+            if let err = error {
+                print("Failed to fetch json data", err)
+                return
+                }
+            
+            guard data != nil else {return}
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                
+                guard let bookDictionaries = json as? [[String:Any]] else { return }
+                
+                for bookDictionary in bookDictionaries {
+                    if let title = bookDictionary["title"] as? String,
+                        let author = bookDictionary["author"] as? String {
+                        
+                        let book = Book(title: title, author: author, pages: [], image: #imageLiteral(resourceName: "steve_jobs.jpg"))
+                        print(book.title)
+                    }
+                }
+            } catch let jsonError {
+                print("Failed to Parse JSON properly", jsonError)
+                }
+            }).resume()
+        }
     }
     
     
