@@ -12,9 +12,23 @@ class BookCell : UITableViewCell {
     
     var book: Book? {
         didSet {
-            coverImageView.image = book?.image
             titleLabel.text = book?.title
             authorLabel.text = book?.author
+            
+            guard let coverImageUrl = book?.coverImageUrl else { return }
+            guard let url = URL(string: coverImageUrl) else { return }
+                        
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let err = error {
+                    print("Failed to print out the image", err)
+                    return
+                }
+                guard let imageData = data else { return }
+                let image = UIImage(data: imageData)
+                DispatchQueue.main.async {
+                    self.coverImageView.image = image
+                }
+            } .resume()
         }
     }
     
@@ -39,6 +53,8 @@ class BookCell : UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        backgroundColor = .clear
         
         addSubview(coverImageView)
         coverImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true

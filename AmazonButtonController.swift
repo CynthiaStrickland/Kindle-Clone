@@ -19,12 +19,13 @@ class AmazonButtonController : UIViewController, UIWebViewDelegate {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCloseAmazon))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
 
-        let webV:UIWebView = UIWebView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        let webV = UIWebView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         
         let url = URL (string: "http://www.amazon.com");
         let request = URLRequest(url: url!);
         webV.loadRequest(request);
         webV.delegate = self
+        
         
     }
 

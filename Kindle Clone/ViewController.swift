@@ -17,6 +17,7 @@ class ViewController: UITableViewController {
         
         setupNavBarButtonItems()
         fetchBooks()
+        setupNavBarStyles()
         
         navigationItem.title = "KINDLE"
         tableView.register(BookCell.self, forCellReuseIdentifier: "cell")
@@ -24,6 +25,51 @@ class ViewController: UITableViewController {
         tableView.backgroundColor = UIColor(white: 1, alpha: 0.3)
         tableView.separatorColor = UIColor(white: 1, alpha: 0.2)
         tableView.tableFooterView = UIView()
+    }
+    
+    //MARK:   TABLEVIEW FOOTER
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        
+        footerView.backgroundColor = UIColor(red: 40/255, green: 40/255, blue: 40/255, alpha: 1)
+        let segmentedControl = UISegmentedControl(items: ["Cloud", "Device"])
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        footerView.addSubview(segmentedControl)
+
+        segmentedControl.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        segmentedControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        segmentedControl.centerXAnchor.constraint(equalTo: footerView.centerXAnchor).isActive = true
+        segmentedControl.centerYAnchor.constraint(equalTo: footerView.centerYAnchor).isActive = true
+        segmentedControl.tintColor = .white
+        segmentedControl.selectedSegmentIndex = 0
+        
+        let gridButton = UIButton(type: .system)
+        gridButton.setImage(#imageLiteral(resourceName: "grid.png").withRenderingMode(.alwaysOriginal), for: .normal)
+        gridButton.translatesAutoresizingMaskIntoConstraints = false
+        footerView.addSubview(gridButton)
+        gridButton.leftAnchor.constraint(equalTo: footerView.leftAnchor).isActive = true
+        gridButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        gridButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        gridButton.centerYAnchor.constraint(equalTo: footerView.centerYAnchor).isActive = true
+        
+        
+        let sortButton = UIButton(type: .system)
+        sortButton.setImage(#imageLiteral(resourceName: "sort.png").withRenderingMode(.alwaysOriginal), for: .normal)
+        sortButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        footerView.addSubview(sortButton)
+        sortButton.leftAnchor.constraint(equalTo: footerView.rightAnchor).isActive = true
+        sortButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        sortButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        sortButton.centerYAnchor.constraint(equalTo: footerView.centerYAnchor).isActive = true
+        
+        return footerView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 50
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -58,6 +104,13 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    func setupNavBarStyles() {
+        //       navigationController?.navigationBar.backgroundColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        navigationController?.navigationBar.barTintColor = UIColor(red: 40/255, green: 40/255, blue: 40/255, alpha: 0.9)
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
     func setupNavBarButtonItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu.png").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(menuButtonPressed))
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "amazon_icon.png").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleAmazonIconPressed))
@@ -68,6 +121,14 @@ class ViewController: UITableViewController {
        
         let navController = UINavigationController(rootViewController: amazonController)
         present(navController, animated: true, completion: nil)
+    }
+    
+    func handleGridPressed() {
+        
+    }
+    
+    func handleSortPressed() {
+        
     }
     
     func menuButtonPressed() {
