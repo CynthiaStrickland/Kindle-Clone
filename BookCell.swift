@@ -41,12 +41,17 @@ class BookCell : UITableViewCell {
     
     private let titleLabel : UILabel = {
         let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "Times New Roman", size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let authorLabel : UILabel = {
         let label2 = UILabel()
+        label2.textColor = .white
+        label2.font = UIFont(name: "Times New Roman", size: 12)
+
         label2.translatesAutoresizingMaskIntoConstraints = false
         return label2
     }()
@@ -71,7 +76,7 @@ class BookCell : UITableViewCell {
         addSubview(authorLabel)
         authorLabel.leftAnchor.constraint(equalTo: coverImageView.rightAnchor, constant: 8).isActive = true
         authorLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8).isActive = true
-        authorLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        authorLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
         authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8).isActive = true
     }
     
